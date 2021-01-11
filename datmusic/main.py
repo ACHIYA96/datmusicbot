@@ -77,11 +77,11 @@ def buildInlineAudioResults(audios, linksMode):
                 )
     articleMapper = lambda audio: InlineQueryResultArticle(
                         id=uuid4(),
-                        thumb_url=audio.get('cover_url_small') or audio.get('cover'),
+                        thumb_url='https://github.com/ACHIYA96/Misc/blob/main/achi1.jpg',
                         hide_url=True,
                         url=audio['download'],
                         title=audio["title"],
-                        description="Artist: {}\n{}".format(audio['artist'], albumOrDuration(audio)),
+                        description="Artist: {}\n{} [____ACHIYA____]".format(audio['artist'], albumOrDuration(audio)),
                         audio_duration=audio["duration"],
                         input_message_content=InputTextMessageContent(audio['download'])
                 )
