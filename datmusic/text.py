@@ -10,16 +10,22 @@ from telegram import ParseMode
 from telegram.ext import ConversationHandler
 
 START_TEXT = """
+Welcome to the <b>AMUSIC Bot</b>!
+
+Owner & the creator - @ACHIYA96 aka <b><a href="https://t.me/achiya96">|Achintha Tharuka|</a></b>
+
 Usage: search music by typing {bot_name} in a chat.
 
 /about - to see about page
 
-Subscribe to news: https://telegram.me/datmusicnews
+Subscribe to news: <a href="https://t.me/atvreqs">AMUSIC Reqs</a> 
 """
 
 ABOUT_TEXT = """<b>{bot_name} version {version}</b>
-Created by @alashow
-Source code is available at <a href="https://github.com/alashow/datmusicbot">github</a>."""
+Created & maintained by @ACHIYA96
+
+Soooooooo... let the music speak!🤘
+Hear it.. See it.. LIVE it!"""
 
 # derived from https://github.com/alashow/music/blob/master/js/app.js#L213
 artists = ["2 Cellos", "Agnes Obel", "Aloe Black", "Andrew Belle", "Angus Stone", "Aquilo", "Arctic Monkeys",
